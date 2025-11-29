@@ -19,11 +19,26 @@ local function fmt_mode(s)
 end
 
 -- Theme dependant custom colors.
-local C = require("default.palette")
-local red = C.red
-local green = C.green
-local icon_hl = { fg = C.gray2 }
-local text_hl = { fg = C.gray2 }
+local C
+local red
+local green
+local icon_hl
+local text_hl
+
+if U.is_nordic() then
+    C = require("nordic.colors")
+    red = C.red.base or C.red
+    green = C.green.base or C.green
+    icon_hl = { fg = C.gray2 }
+    text_hl = { fg = C.gray2 }
+else
+    -- default.nvim用
+    C = require("default.palette")
+    red = C.red
+    green = C.green
+    icon_hl = { fg = C.gray2 }
+    text_hl = { fg = C.gray2 }
+end
 
 local function get_virtual_text_color()
     if require("alex.native.lsp").virtual_diagnostics then
@@ -73,7 +88,7 @@ local default_z = {
         "location",
         icon = { "", align = "left" },
         fmt = function(str)
-            local fixed_width = 7
+            local fixed_width = 5
             return string.format("%" .. fixed_width .. "s", str)
         end,
     },
@@ -101,28 +116,28 @@ local default_x = {
     {
         U.current_buffer_lsp,
         padding = 1,
-        color = text_hl,
+        color = { bg = "NONE", fg = text_hl.fg },
         icon = { " ", color = icon_hl },
     },
     {
         function()
             return ""
         end,
-        color = get_virtual_text_color,
+        color = { bg = "NONE", fg = get_virtual_text_color().fg },
         separator = { " ", "" },
     },
     {
         function()
             return " "
         end,
-        color = get_zen_mode_color,
+        color = { bg = "NONE", fg = get_zen_mode_color().fg },
         padding = 0,
     },
     {
         function()
             return "󰉼  "
         end,
-        color = get_format_enabled_color,
+        color = { bg = "NONE", fg = get_format_enabled_color().fg },
         padding = 0,
     },
 }
@@ -146,7 +161,7 @@ local oil = {
                 U.get_short_cwd,
                 padding = 0,
                 icon = { "   ", color = icon_hl },
-                color = text_hl,
+                color = { bg = "NONE", fg = text_hl.fg },
             },
         },
         lualine_x = default_x,
@@ -172,7 +187,7 @@ local telescope = {
                 function()
                     return "Telescope"
                 end,
-                color = text_hl,
+                color = { bg = "NONE", fg = text_hl.fg },
                 icon = { "  ", color = icon_hl },
             },
         },
@@ -182,6 +197,29 @@ local telescope = {
     },
     filetypes = { "TelescopePrompt" },
 }
+
+----------------------------------------------------------------------------------------------------
+--- Custom theme with transparent background for lualine_c, y, and x.
+
+local auto_theme = require("lualine.themes.auto")
+local transparent_theme = {}
+
+-- Copy auto theme and set background to NONE for sections 'c', 'y', and 'x'
+for mode, mode_data in pairs(auto_theme) do
+    transparent_theme[mode] = {}
+    for section, section_data in pairs(mode_data) do
+        if section == "c" or section == "y" or section == "x" then
+            -- Sections 'c', 'y', and 'x' have transparent background
+            transparent_theme[mode][section] = {
+                bg = "NONE",
+                fg = section_data.fg, -- Keep original foreground color
+            }
+        else
+            -- Other sections (a, b, z) keep original theme
+            transparent_theme[mode][section] = section_data
+        end
+    end
+end
 
 ----------------------------------------------------------------------------------------------------
 --- Setup.
@@ -231,7 +269,7 @@ require("lualine").setup({
         lualine_z = default_z,
     },
     options = {
-        theme = "auto",
+        theme = transparent_theme,
         disabled_filetypes = { "dashboard" },
         globalstatus = true,
         section_separators = { left = " ", right = " " },

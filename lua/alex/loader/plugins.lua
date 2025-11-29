@@ -189,11 +189,11 @@ return {
 
     -- Themes.
     {
-        "AlexvZyl/default.nvim",
+        "peinan/nordic-transparent.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            require("default").load()
+            require("alex.plugins.nordic")
         end,
     },
 
