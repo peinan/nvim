@@ -11,18 +11,36 @@ vim.opt.mouse = ""
 vim.opt.hlsearch = true
 
 vim.opt.clipboard:append("unnamedplus")
-vim.g.clipboard = {
-    name = "xclip",
-    copy = {
-        ["+"] = "xclip -selection clipboard",
-        ["*"] = "xclip -selection primary",
-    },
-    paste = {
-        ["+"] = "xclip -selection clipboard -o",
-        ["*"] = "xclip -selection primary -o",
-    },
-    cache_enabled = 0,
-}
+
+-- OSに応じてクリップボードツールを設定
+local is_mac = vim.fn.has("mac") == 1 or vim.fn.has("macunix") == 1
+if is_mac then
+    vim.g.clipboard = {
+        name = "macOS",
+        copy = {
+            ["+"] = "pbcopy",
+            ["*"] = "pbcopy",
+        },
+        paste = {
+            ["+"] = "pbpaste",
+            ["*"] = "pbpaste",
+        },
+        cache_enabled = 0,
+    }
+else
+    vim.g.clipboard = {
+        name = "xclip",
+        copy = {
+            ["+"] = "xclip -selection clipboard",
+            ["*"] = "xclip -selection primary",
+        },
+        paste = {
+            ["+"] = "xclip -selection clipboard -o",
+            ["*"] = "xclip -selection primary -o",
+        },
+        cache_enabled = 0,
+    }
+end
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
