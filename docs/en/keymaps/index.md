@@ -83,7 +83,6 @@ The leader key is set to `<Space>`.
 | Key | Mode | Description | Config File |
 |-----|------|-------------|-------------|
 | `Q` | `n` | Delete buffer | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
-| `<C-n>` | `n` | Buffer list (Telescope) | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
 
 ## File Management
 

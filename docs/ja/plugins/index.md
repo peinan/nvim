@@ -10,10 +10,10 @@
 
 ## プラグインカテゴリ
 
-- [UI/UX](/plugins/ui-ux) - ユーザーインターフェースとユーザーエクスペリエンス
-- [編集・移動](/plugins/editing) - テキスト編集と移動機能
-- [言語サポート](/plugins/language) - 言語サーバーとシンタックスハイライト
-- [その他](/plugins/others) - その他の機能
+- [UI/UX](/ja/plugins/ui-ux) - ユーザーインターフェースとユーザーエクスペリエンス
+- [編集・移動](/ja/plugins/editing) - テキスト編集と移動機能
+- [言語サポート](/ja/plugins/language) - 言語サーバーとシンタックスハイライト
+- [その他](/ja/plugins/others) - その他の機能
 
 ## プラグイン一覧表
 
@@ -50,7 +50,7 @@
 | [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) | ユーティリティ関数 |
 | [nui.nvim](https://github.com/MunifTanjim/nui.nvim) | UIコンポーネント |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify) | 通知システム |
-| [quicker.nvim](https://github.com/stevearc/quicker.nvim) | Telescope拡張 |
+| [quicker.nvim](https://github.com/stevearc/quicker.nvim) | quickfix/location list UI を改善するプラグイン |
 | [lazydev.nvim](https://github.com/folke/lazydev.nvim) | Lua開発支援 |
 | [luvit-meta](https://github.com/Bilal2453/luvit-meta) | Lua開発支援 |
 | [vim-repeat](https://github.com/tpope/vim-repeat) | リピート機能 |

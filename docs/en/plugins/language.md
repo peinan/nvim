@@ -30,23 +30,20 @@ Provides LSP (Language Server Protocol) configuration.
 
 **Main features**:
 - Language server configuration
-- Diagnostics display
 - Code completion
 - Jump to definitions and references
 - Rename
 - Format
-
-**Configuration files**:
-- [`lua/alex/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/init.lua) - LSP initialization and diagnostics
-- [`lua/alex/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/defaults.lua) - Default LSP settings
-- [`lua/alex/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/tsn.lua) - TypeScript/Node.js specific settings
-
-**Main features**:
 - Diagnostics display (errors, warnings, info, hints)
 - Virtual text diagnostics (toggleable)
 - Auto format (toggleable)
 - Diagnostics float display
 - Navigate between diagnostics
+
+**Configuration files**:
+- [`lua/alex/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/init.lua) - LSP initialization and diagnostics
+- [`lua/alex/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/defaults.lua) - Default LSP settings
+- [`lua/alex/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/tsn.lua) - TypeScript/Node.js specific settings
 
 **Keymaps**: See the LSP-related section in [Keymaps List](/keymaps/)
 

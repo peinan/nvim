@@ -122,7 +122,7 @@
 | キー | モード | 説明 | 設定ファイル |
 |------|--------|------|-------------|
 | `<Esc>` | `n` | 検索ハイライトをクリア | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
-| `K` | `n` | 無効化 | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
+| `K` | `n` | Neovimのデフォルトの K コマンドを無効化 | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
 | `gm` | `n` | マニュアルページを垂直分割で開く | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
 | `yp` | `n` | ファイル名をクリップボードにコピー | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
 | `yP` | `n` | ファイルパスをクリップボードにコピー | [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua) |
