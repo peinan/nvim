@@ -1,0 +1,17 @@
+{
+  "name": "nvim-docs",
+  "version": "1.0.0",
+  "description": "Neovim設定のドキュメント",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vitepress-plugin-mermaid": "^2.0.3",
+    "mermaid": "^10.6.1"
+  }
+}
+
