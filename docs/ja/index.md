@@ -4,7 +4,8 @@
 
 ## 概要
 
-このNeovim設定は、[AlexvZyl/nvim](https://github.com/AlexvZyl/nvim)をフォークしたもので、モジュラーで拡張可能な構造を持っています。
+これは [peinan](https://github.com/peinan) が使用している Neovim の設定です。
+なお、この設定は [dotfiles](https://github.com/peinan/dotfiles) のサブモジュールとして使用されています。
 
 ### 主な特徴
 

@@ -4,7 +4,7 @@ This is a comprehensive guide to the Neovim configuration.
 
 ## Overview
 
-This Neovim configuration is a fork of [AlexvZyl/nvim](https://github.com/AlexvZyl/nvim) with a modular and extensible structure.
+This is Neovim configuration for my [dotfiles](https://github.com/peinan/dotfiles).
 
 ### Key Features
 
