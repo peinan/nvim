@@ -54,13 +54,6 @@ local function get_format_enabled_color()
     return icon_hl
 end
 
-local function get_zen_mode_color()
-    if require("alex.plugins.no-neck-pain").enabled then
-        return { fg = green }
-    end
-    return icon_hl
-end
-
 local function get_recording_color()
     if U.is_recording() then
         return { fg = red }
@@ -125,13 +118,6 @@ local default_x = {
         end,
         color = { bg = "NONE", fg = get_virtual_text_color().fg },
         separator = { " ", "" },
-    },
-    {
-        function()
-            return " "
-        end,
-        color = { bg = "NONE", fg = get_zen_mode_color().fg },
-        padding = 0,
     },
     {
         function()

@@ -22,7 +22,6 @@ function M.init()
 
     -- Lazyload dependents:
     M.telescope()
-    M.no_neck_pain()
 end
 
 function M.lsp()
@@ -56,14 +55,6 @@ function M.lsp()
     keymap(n, "<leader>l", "<Cmd>LspInfo<CR>", default_settings)
 end
 
-function M.blame()
-    keymap(n, "<leader>b", "<Cmd>GitBlameToggle<CR>", default_settings)
-end
-
-function M.no_neck_pain()
-    keymap(n, "<leader>n", require("alex.plugins.no-neck-pain").toggle, default_settings)
-end
-
 function M.noice()
     local duration = require("alex.plugins.neoscroll-nvim").scroll_duration
 
@@ -94,6 +85,11 @@ function M.native()
     keymap(t, "<C-j>", "<C-\\><C-n><C-w>j", default_settings)
     keymap(t, "<C-k>", "<C-\\><C-n><C-w>k", default_settings)
     keymap(t, "<C-l>", "<C-\\><C-n><C-w>l", default_settings)
+
+        -- Movement
+    keymap(n, "k", "gk", default_settings)
+    keymap(n, "j", "gj", default_settings)
+    keymap(v, "v", "$h", default_settings)
 
     -- Misc
     keymap(n, "<Esc>", "<Cmd>noh<CR>", allow_remap)
@@ -162,12 +158,6 @@ function M.editing()
     end, default_settings)
     keymap(v, "<Esc>", "v", default_settings)
     keymap(v, "i", "I", default_settings)
-    keymap(n, "s", function()
-        require("leap").leap({})
-    end)
-    keymap(n, "S", function()
-        require("leap").leap({ backward = true })
-    end)
     keymap(n, "<leader>v", function()
         require("alex.keymaps.utils").toggle_diffview()
     end)
@@ -231,11 +221,6 @@ function M.telescope()
     -- TODO: I don't want this to jump if there is only one entry.
     keymap(n, "gr", "<Cmd>Telescope lsp_references<CR>", default_settings)
     keymap(n, "gd", "<Cmd>Telescope lsp_definitions<CR>", default_settings)
-end
-
-function M.leap()
-    vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap-forward)")
-    vim.keymap.set({ "n", "x", "o" }, "S", "<Plug>(leap-backward)")
 end
 
 function M.completion()

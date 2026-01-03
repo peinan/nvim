@@ -9,12 +9,13 @@ require("ibl").setup({
         enabled = true,
         show_start = false,
         show_end = false,
-        -- char = { context_char },
-        char = { char },
+        char = { context_char },
+        -- char = { char },
         highlight = { "IndentBlanklineContextChar", "IndentBlanklineContextChar" },
     },
     indent = {
-        char = { char },
+        -- char = { char },
+        char = { context_char },
         highlight = { "IndentBlanklineChar", "IndentBlanklineChar" },
     },
 })

@@ -101,23 +101,8 @@ return {
             require("alex.plugins.diffview")
         end,
     },
-    {
-        "f-person/git-blame.nvim",
-        keys = { "<leader>b" },
-        config = function()
-            require("alex.plugins.git-blame")
-        end,
-    },
 
-    -- Editing / movement.
-    {
-        "ggandor/leap.nvim",
-        dependencies = "tpope/vim-repeat",
-        keys = { "s", "S" },
-        config = function()
-            require("alex.plugins.leap")
-        end,
-    },
+    -- Editing / Movement.
 
     -- Language.
     {
