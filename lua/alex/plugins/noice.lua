@@ -66,18 +66,41 @@ local cmdline = {
     },
 }
 
+local row_percent = 30
+local editor_height = vim.o.lines
+local cmdline_row = math.floor(editor_height * row_percent / 100)
 local views = {
     cmdline_popup = {
-        border = { style = "none" },
-        position = { row = "100%", col = "50%" },
-        size = { width = 70 },
+        position = {
+            row = cmdline_row,
+            col = "50%",
+        },
+        size = {
+            width = 60,
+            height = "auto",
+        },
+        border = {
+            style = "rounded",
+        },
     },
-    cmdline_input = {
-        border = { style = U.border_chars_none },
+    popupmenu = {
+        relative = "editor",
+        position = {
+            row = cmdline_row + 3,
+            col = "50%",
+        },
+        size = {
+            width = 60,
+            height = 10,
+        },
+        border = {
+            style = "rounded",
+            padding = { 0, 1 },
+        },
+        win_options = {
+            winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+        },
     },
-    hover = { border = { style = "rounded" } },
-    float = { border = { style = "rounded" } },
-    popup = { border = { style = "rounded" } },
 }
 
 local lsp = {
@@ -98,7 +121,7 @@ local notify = {
 
 local presets = {
     bottom_search = true, -- use a classic bottom cmdline for search
-    command_palette = true, -- position the cmdline and popupmenu together
+    command_palette = false, -- position the cmdline and popupmenu together
     long_message_to_split = true, -- long messages will be sent to a split
     lsp_doc_border = true, -- add a border to hover docs and signature help
 }

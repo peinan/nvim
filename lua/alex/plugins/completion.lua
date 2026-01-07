@@ -20,6 +20,26 @@ CMP.setup({
     -- snippet = snippet,
 })
 
+-- Window.
+vim.api.nvim_set_hl(0, "CmpCursorLine", {
+    bg = vim.api.nvim_get_hl(0, { name = "LineNr" }).fg,
+    fg = "NONE",
+})
+local window = {
+    completion = {
+        border = "rounded",
+        winhighlight = "Normal:Normal,FloatBorder:DiagnosticInfo,CursorLine:CmpCursorLine",
+        scrollbar = true,
+    },
+    documentation = {
+        border = "rounded",
+        winhighlight = "Normal:Normal,FloatBorder:DiagnosticInfo,CursorLine:CmpCursorLine",
+    },
+}
+CMP.setup({
+    window = window,
+})
+
 -- Cmdline.
 local cmdline_window = {
     completion = {
@@ -30,16 +50,6 @@ local cmdline_window = {
         side_padding = 0,
     },
 }
-local cmdline = {
-    window = cmdline_window,
-    completion = { autocomplete = false },
-    mapping = CMP.mapping.preset.cmdline(),
-    sources = CMP.config.sources({
-        { name = "cmdline" },
-        { name = "path" },
-    }),
-}
-CMP.setup.cmdline({ ":", ":!" }, cmdline)
 
 -- Search.
 local search = {
