@@ -7,12 +7,12 @@ vim.opt.winborder = "rounded"
 
 vim.opt.showmode = false
 vim.opt.swapfile = false
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
 vim.opt.hlsearch = true
 
 vim.opt.clipboard:append("unnamedplus")
 
--- OSに応じてクリップボードツールを設定
+-- Select appropriate clipboard tool by OS
 local is_mac = vim.fn.has("mac") == 1 or vim.fn.has("macunix") == 1
 if is_mac then
     vim.g.clipboard = {
