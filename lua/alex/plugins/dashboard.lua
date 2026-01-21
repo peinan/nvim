@@ -25,7 +25,7 @@ config.shortcut = {
     },
     {
         desc = " 󰱼  File ",
-        action = "Telescope find_files cwd=~",
+        action = "Telescope find_files",
         group = "@string",
         key = "ff",
     },
