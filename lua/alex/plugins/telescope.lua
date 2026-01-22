@@ -101,6 +101,22 @@ local preview_vertical = {
 }
 preview_vertical = U.merge(baseline, preview_vertical)
 
+local preview_horizontal = {
+    layout_strategy = "horizontal",
+    previewer = true,
+    borderchars = {
+        prompt = U.border_chars_telescope_default,
+        results = U.border_chars_telescope_default,
+        preview = U.border_chars_telescope_default,
+    },
+    layout_config = {
+        height = 0.9,
+        width = 0.9,
+        preview_width = 0.6,
+    },
+}
+preview_horizontal = U.merge(baseline, preview_horizontal)
+
 ----------------------------------------------------------------------------------------------------
 --- Configure
 
@@ -108,17 +124,17 @@ TS.setup({
     defaults = large_no_preview,
     pickers = {
         oldfiles = small_no_preview,
-        find_files = small_no_preview,
+        find_files = preview_horizontal,
         registers = small_no_preview,
 
         spell_suggest = single_select_small,
 
         jumplist = preview_vertical,
         highlights = preview_vertical,
-        live_grep = preview_vertical,
-        lsp_references = preview_vertical,
-        lsp_definitions = preview_vertical,
-        lsp_implementations = preview_vertical,
+        live_grep = preview_horizontal,
+        lsp_references = preview_horizontal,
+        lsp_definitions = preview_horizontal,
+        lsp_implementations = preview_horizontal,
         diagnostics = preview_vertical,
         lsp_document_symbols = U.merge(preview_vertical, {
             symbol_width = 0.75,
