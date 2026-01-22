@@ -156,11 +156,6 @@ function M.editing()
     keymap(ex_t, "<C-s>", function()
         require("alex.keymaps.utils").save_file()
     end, default_settings)
-    keymap(v, "<Esc>", "v", default_settings)
-    keymap(v, "i", "I", default_settings)
-    keymap(n, "<leader>v", function()
-        require("alex.keymaps.utils").toggle_diffview()
-    end)
 end
 
 function M.telescope()
