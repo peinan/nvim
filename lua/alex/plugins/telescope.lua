@@ -124,7 +124,7 @@ TS.setup({
     defaults = large_no_preview,
     pickers = {
         oldfiles = small_no_preview,
-        find_files = preview_horizontal,
+        find_files = U.merge(preview_horizontal, { hidden = true }),
         registers = small_no_preview,
 
         spell_suggest = single_select_small,
