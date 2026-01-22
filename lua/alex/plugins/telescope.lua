@@ -17,8 +17,8 @@ local MAPPINGS = {
     n = ACTIONS,
 }
 
-local SINGLE_SELECT_ICON = "   "
-local SINGLE_SELECT_ENTRY_PREFIX = "   "
+local SINGLE_SELECT_ICON = "   "
+local SINGLE_SELECT_ENTRY_PREFIX = "   "
 local LARGE_WIDTH = 141
 local SMALL_WIDTH = 120
 local FULL_HEIGHT = 1000 -- HACK: 1.0 does not seem to work
@@ -46,10 +46,10 @@ local baseline = {
 
     sort_mru = true,
     sorting_strategy = "ascending",
-    multi_icon = "   ",
-    entry_prefix = "   ",
-    prompt_prefix = "   ",
-    selection_caret = "   ",
+    multi_icon = "   ",
+    entry_prefix = "   ",
+    prompt_prefix = "   ",
+    selection_caret = "   ",
     hl_result_eol = true,
     wrap_results = true,
     winblend = 0,
