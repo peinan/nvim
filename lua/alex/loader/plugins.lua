@@ -112,6 +112,13 @@ return {
 
     -- Editing / Movement.
     {
+        "folke/flash.nvim",
+        event = "VeryLazy",
+        config = function()
+            require("alex.plugins.flash")
+        end,
+    },
+    {
         "NMAC427/guess-indent.nvim",
         event = { "BufReadPre", "BufNewFile" },
         config = function()

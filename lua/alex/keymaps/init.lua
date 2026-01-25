@@ -224,6 +224,24 @@ function M.telescope()
     keymap(n, "gd", "<Cmd>Telescope lsp_definitions<CR>", default_settings)
 end
 
+function M.flash()
+    keymap({ "n", "x", "o" }, "<leader>ss", function()
+        require("flash").jump()
+    end, default_settings)
+    keymap({ "n", "x", "o" }, "<leader>sS", function()
+        require("flash").treesitter()
+    end, default_settings)
+    keymap("o", "<leader>sr", function()
+        require("flash").remote()
+    end, default_settings)
+    keymap({ "o", "x" }, "<leader>sR", function()
+        require("flash").treesitter_search()
+    end, default_settings)
+    keymap("c", "<C-s>", function()
+        require("flash").toggle()
+    end, default_settings)
+end
+
 function M.completion()
     local cmp = require("cmp")
     cmp.setup({
