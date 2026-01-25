@@ -19,4 +19,31 @@ require("mini.files").setup({
     },
 })
 
+-- Customize appearance
+vim.api.nvim_create_autocmd("User", {
+    pattern = "MiniFilesWindowUpdate",
+    callback = function(args)
+        vim.api.nvim_win_set_config(args.data.win_id, {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+        })
+        vim.wo[args.data.win_id].winhighlight =
+            "NormalFloat:MiniFilesNormal,FloatBorder:MiniFilesBorder,FloatTitle:MiniFilesTitle"
+    end,
+})
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+    pattern = "*",
+    callback = function()
+        local telescope_border = vim.api.nvim_get_hl(0, { name = "TelescopeBorder" })
+        local telescope_title = vim.api.nvim_get_hl(0, { name = "TelescopePromptTitle" })
+
+        vim.api.nvim_set_hl(0, "MiniFilesNormal", { bg = "NONE" })
+        vim.api.nvim_set_hl(0, "MiniFilesBorder", telescope_border)
+        vim.api.nvim_set_hl(0, "MiniFilesTitle", telescope_title)
+        vim.api.nvim_set_hl(0, "MiniFilesTitleFocused", telescope_title)
+    end,
+})
+
+vim.cmd("doautocmd ColorScheme")
+
 require("alex.keymaps").mini_files()
