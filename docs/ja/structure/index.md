@@ -24,31 +24,31 @@ nvim/
 
 ### `init.lua`
 
-Neovimのエントリーポイント。`lua/alex`モジュールを読み込みます。
+Neovimのエントリーポイント。`lua/peinan`モジュールを読み込みます。
 
 **ファイル**: [`init.lua`](https://github.com/peinan/nvim/tree/main/init.lua)
 
 ```lua
-require("alex")
+require("peinan")
 ```
 
-### [`lua/alex/`](https://github.com/peinan/nvim/tree/main/lua/alex)
+### [`lua/peinan/`](https://github.com/peinan/nvim/tree/main/lua/peinan)
 
 メインの設定モジュール。すべての設定がこのディレクトリ配下に配置されています。
 
-#### `lua/alex/init.lua`
+#### `lua/peinan/init.lua`
 
 メインの初期化ファイル。以下の順序でモジュールを読み込みます：
 
-1. 環境チェック（`alex.environments`）
-2. ネイティブオプション設定（`alex.native.options`）
-3. プラグインローダー（`alex.loader`）
-4. ネイティブ機能（`alex.native`）
-5. キーマップ（`alex.keymaps`）
+1. 環境チェック（`peinan.environments`）
+2. ネイティブオプション設定（`peinan.native.options`）
+3. プラグインローダー（`peinan.loader`）
+4. ネイティブ機能（`peinan.native`）
+5. キーマップ（`peinan.keymaps`）
 
-**ファイル**: [`lua/alex/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/init.lua)
+**ファイル**: [`lua/peinan/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/init.lua)
 
-#### [`lua/alex/environments/`](https://github.com/peinan/nvim/tree/main/lua/alex/environments)
+#### [`lua/peinan/environments/`](https://github.com/peinan/nvim/tree/main/lua/peinan/environments)
 
 環境別の設定を管理します。Neovide、WezTerm、VSCodeなど、実行環境に応じた設定を適用します。
 
@@ -63,7 +63,7 @@ require("alex")
 - 環境固有のオプション設定
 - 環境に応じた初期化の制御
 
-#### [`lua/alex/keymaps/`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps)
+#### [`lua/peinan/keymaps/`](https://github.com/peinan/nvim/tree/main/lua/peinan/keymaps)
 
 すべてのキーマップ定義を管理します。一箇所に集約することで、キーバインドの競合を防ぎます。
 
@@ -76,7 +76,7 @@ require("alex")
 - モード別（normal, insert, visual, terminal, command）のキーマップ
 - プラグイン固有のキーマップ
 
-#### [`lua/alex/loader/`](https://github.com/peinan/nvim/tree/main/lua/alex/loader)
+#### [`lua/peinan/loader/`](https://github.com/peinan/nvim/tree/main/lua/peinan/loader)
 
 プラグインのローディングを管理します。Lazy.nvimを使用してプラグインを遅延読み込みします。
 
@@ -90,14 +90,14 @@ require("alex")
 - 遅延読み込みの設定
 - プラグインの依存関係管理
 
-#### [`lua/alex/native/`](https://github.com/peinan/nvim/tree/main/lua/alex/native)
+#### [`lua/peinan/native/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native)
 
 Neovimのネイティブ機能の設定を管理します。プラグインに依存しない機能を実装します。
 
 **主要ファイル**:
 - `init.lua` - ネイティブ機能の初期化
 - `options.lua` - Neovimオプション設定
-- [`lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp) - LSP設定
+- [`lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp) - LSP設定
   - `init.lua` - LSPの初期化と診断設定
   - `defaults.lua` - デフォルトLSP設定
   - `tsn.lua` - TypeScript/Node.js固有の設定
@@ -110,7 +110,7 @@ Neovimのネイティブ機能の設定を管理します。プラグインに�
 - LSPの設定と診断
 - UI要素のカスタマイズ
 
-#### [`lua/alex/plugins/`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins)
+#### [`lua/peinan/plugins/`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins)
 
 各プラグインの設定ファイルを管理します。プラグインごとに個別の設定ファイルがあります。
 
@@ -126,7 +126,7 @@ Neovimのネイティブ機能の設定を管理します。プラグインに�
 - プラグイン固有の設定
 - プラグイン間の連携設定
 
-#### [`lua/alex/utils/`](https://github.com/peinan/nvim/tree/main/lua/alex/utils)
+#### [`lua/peinan/utils/`](https://github.com/peinan/nvim/tree/main/lua/peinan/utils)
 
 ユーティリティ関数を提供します。
 

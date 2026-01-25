@@ -46,7 +46,7 @@ git clone https://github.com/peinan/nvim ~/.config/nvim
 メインの設定ファイルは以下の場所にあります：
 
 - [`init.lua`](https://github.com/peinan/nvim/tree/main/init.lua) - エントリーポイント
-- [`lua/alex/`](https://github.com/peinan/nvim/tree/main/lua/alex) - メインの設定モジュール
+- [`lua/peinan/`](https://github.com/peinan/nvim/tree/main/lua/peinan) - メインの設定モジュール
 
 詳細は[ディレクトリ構造](/structure/)を参照してください。
 

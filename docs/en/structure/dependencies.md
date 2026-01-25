@@ -7,33 +7,33 @@ This page explains the dependencies between modules in the Neovim configuration.
 ```mermaid
 graph TD
     A[init.lua] --> B[alex/init.lua]
-    B --> C[alex.environments]
-    B --> D[alex.native.options]
-    B --> E[alex.loader]
-    B --> F[alex.native]
-    B --> G[alex.keymaps]
+    B --> C[peinan.environments]
+    B --> D[peinan.native.options]
+    B --> E[peinan.loader]
+    B --> F[peinan.native]
+    B --> G[peinan.keymaps]
 
     C --> C1[neovide.lua]
     C --> C2[wezterm.lua]
     C --> C3[vscode.lua]
 
-    E --> E1[alex.loader.bootstrap]
-    E --> E2[alex.loader.plugins]
+    E --> E1[peinan.loader.bootstrap]
+    E --> E2[peinan.loader.plugins]
 
-    F --> F1[alex.native.options]
-    F --> F2[alex.native.terminal]
-    F --> F3[alex.native.statuscolumn]
-    F --> F4[alex.native.winbar]
-    F --> F5[alex.native.lsp]
+    F --> F1[peinan.native.options]
+    F --> F2[peinan.native.terminal]
+    F --> F3[peinan.native.statuscolumn]
+    F --> F4[peinan.native.winbar]
+    F --> F5[peinan.native.lsp]
 
-    F5 --> F5A[alex.native.lsp.defaults]
-    F5 --> F5B[alex.native.lsp.tsn]
+    F5 --> F5A[peinan.native.lsp.defaults]
+    F5 --> F5B[peinan.native.lsp.tsn]
 
-    G --> G1[alex.keymaps.utils]
-    G --> G2[alex.utils]
+    G --> G1[peinan.keymaps.utils]
+    G --> G2[peinan.utils]
 
-    E2 --> P1[alex.plugins.*]
-    P1 --> P2[alex.utils]
+    E2 --> P1[peinan.plugins.*]
+    P1 --> P2[peinan.utils]
 
     style A fill:#e1f5ff
     style B fill:#fff4e1
@@ -56,7 +56,7 @@ sequenceDiagram
     participant K as keymaps
 
     N->>I: Launch
-    I->>A: require("alex")
+    I->>A: require("peinan")
     A->>E: Environment check
     E-->>A: should_setup
     alt should_setup == true
@@ -116,19 +116,19 @@ graph LR
 
 ```mermaid
 graph TD
-    K[alex.keymaps.init] --> K1[native]
+    K[peinan.keymaps.init] --> K1[native]
     K --> K2[editing]
     K --> K3[lsp]
     K --> K4[telescope]
     K --> K5[no_neck_pain]
 
-    K1 --> U1[alex.keymaps.utils]
+    K1 --> U1[peinan.keymaps.utils]
     K2 --> U1
-    K3 --> L1[alex.native.lsp]
+    K3 --> L1[peinan.native.lsp]
     K4 --> T1[telescope.builtin]
-    K5 --> N1[alex.plugins.no-neck-pain]
+    K5 --> N1[peinan.plugins.no-neck-pain]
 
-    U1 --> U2[alex.utils]
+    U1 --> U2[peinan.utils]
     U1 --> O1[oil.nvim]
     U1 --> D1[diffview.nvim]
 ```
@@ -149,15 +149,15 @@ graph TD
 
 ### Environment Module
 
-The environment module (`alex.environments`) runs before all other modules. This allows environment-specific initialization control.
+The environment module (`peinan.environments`) runs before all other modules. This allows environment-specific initialization control.
 
 ### Option Settings
 
-`alex.native.options` must run before plugins are loaded. This ensures plugins can reference the correct option settings.
+`peinan.native.options` must run before plugins are loaded. This ensures plugins can reference the correct option settings.
 
 ### Plugin Loader
 
-`alex.loader` initializes Lazy.nvim and loads all plugin definitions. Plugins are lazy-loaded, so only configurations are loaded at startup.
+`peinan.loader` initializes Lazy.nvim and loads all plugin definitions. Plugins are lazy-loaded, so only configurations are loaded at startup.
 
 ### Keymaps
 

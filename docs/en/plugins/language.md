@@ -6,7 +6,7 @@ This page describes plugins related to language servers and syntax highlighting.
 
 Provides syntax highlighting and text objects.
 
-**Configuration file**: [`lua/alex/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/treesitter.lua)
+**Configuration file**: [`lua/peinan/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/treesitter.lua)
 
 **Dependencies**:
 - nvim-treesitter-textobjects
@@ -26,7 +26,7 @@ Provides syntax highlighting and text objects.
 
 Provides LSP (Language Server Protocol) configuration.
 
-**Configuration file**: [`lua/alex/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp)
+**Configuration file**: [`lua/peinan/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp)
 
 **Main features**:
 - Language server configuration
@@ -41,9 +41,9 @@ Provides LSP (Language Server Protocol) configuration.
 - Navigate between diagnostics
 
 **Configuration files**:
-- [`lua/alex/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/init.lua) - LSP initialization and diagnostics
-- [`lua/alex/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/defaults.lua) - Default LSP settings
-- [`lua/alex/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/tsn.lua) - TypeScript/Node.js specific settings
+- [`lua/peinan/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/init.lua) - LSP initialization and diagnostics
+- [`lua/peinan/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/defaults.lua) - Default LSP settings
+- [`lua/peinan/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/tsn.lua) - TypeScript/Node.js specific settings
 
 **Keymaps**: See the LSP-related section in [Keymaps List](/keymaps/)
 
@@ -51,7 +51,7 @@ Provides LSP (Language Server Protocol) configuration.
 
 Provides a completion engine.
 
-**Configuration file**: [`lua/alex/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/completion.lua)
+**Configuration file**: [`lua/peinan/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/completion.lua)
 
 **Dependencies**:
 - cmp-omni
@@ -94,7 +94,7 @@ local sources = CMP.config.sources({
 
 Integrates linters.
 
-**Configuration file**: [`lua/alex/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/linter.lua)
+**Configuration file**: [`lua/peinan/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/linter.lua)
 
 **Main features**:
 - Integration of multiple linters
@@ -109,7 +109,7 @@ Integrates linters.
 
 Highlights and makes TODO comments searchable.
 
-**Configuration file**: [`lua/alex/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/todo.lua)
+**Configuration file**: [`lua/peinan/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/todo.lua)
 
 **Dependencies**:
 - plenary.nvim

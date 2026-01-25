@@ -1,4 +1,4 @@
-local U = require("alex.utils")
+local U = require("peinan.utils")
 
 -- TODO: This should only run for the oil filetype.
 vim.on_key(function(key, typed)
@@ -6,6 +6,6 @@ vim.on_key(function(key, typed)
         return
     end
     if (typed == "-") or (key:len() == 3) then
-        require("alex.native.winbar").set_winbar()
+        require("peinan.native.winbar").set_winbar()
     end
 end)

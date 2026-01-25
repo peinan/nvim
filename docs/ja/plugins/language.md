@@ -6,7 +6,7 @@
 
 シンタックスハイライトとテキストオブジェクトを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/treesitter.lua)
+**設定ファイル**: [`lua/peinan/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/treesitter.lua)
 
 **依存関係**:
 - nvim-treesitter-textobjects
@@ -26,7 +26,7 @@
 
 LSP（Language Server Protocol）の設定を提供します。
 
-**設定ファイル**: [`lua/alex/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp)
+**設定ファイル**: [`lua/peinan/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp)
 
 **主な機能**:
 - 言語サーバーの設定
@@ -37,9 +37,9 @@ LSP（Language Server Protocol）の設定を提供します。
 - フォーマット
 
 **設定ファイル**:
-- [`lua/alex/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/init.lua) - LSPの初期化と診断設定
-- [`lua/alex/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/defaults.lua) - デフォルトLSP設定
-- [`lua/alex/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp/tsn.lua) - TypeScript/Node.js固有の設定
+- [`lua/peinan/native/lsp/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/init.lua) - LSPの初期化と診断設定
+- [`lua/peinan/native/lsp/defaults.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/defaults.lua) - デフォルトLSP設定
+- [`lua/peinan/native/lsp/tsn.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp/tsn.lua) - TypeScript/Node.js固有の設定
 
 **主な機能**:
 - 診断の表示（エラー、警告、情報、ヒント）
@@ -54,7 +54,7 @@ LSP（Language Server Protocol）の設定を提供します。
 
 補完エンジンを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/completion.lua)
+**設定ファイル**: [`lua/peinan/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/completion.lua)
 
 **依存関係**:
 - cmp-omni
@@ -97,7 +97,7 @@ local sources = CMP.config.sources({
 
 リンターを統合します。
 
-**設定ファイル**: [`lua/alex/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/linter.lua)
+**設定ファイル**: [`lua/peinan/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/linter.lua)
 
 **主な機能**:
 - 複数のリンターの統合
@@ -112,7 +112,7 @@ local sources = CMP.config.sources({
 
 TODOコメントをハイライトし、検索可能にします。
 
-**設定ファイル**: [`lua/alex/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/todo.lua)
+**設定ファイル**: [`lua/peinan/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/todo.lua)
 
 **依存関係**:
 - plenary.nvim

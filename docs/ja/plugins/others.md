@@ -6,7 +6,7 @@
 
 キーマップのヘルプを表示します。
 
-**設定ファイル**: [`lua/alex/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/which-key.lua)
+**設定ファイル**: [`lua/peinan/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/which-key.lua)
 
 **主な機能**:
 - キーマップの候補表示
@@ -21,7 +21,7 @@
 
 カラーテーマを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/nordic.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/nordic.lua)
+**設定ファイル**: [`lua/peinan/plugins/nordic.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/nordic.lua)
 
 **主な機能**:
 - 透明な背景
@@ -52,7 +52,7 @@ require("tmux").setup()
 
 アイコンを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/nvim-web-devicons.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/nvim-web-devicons.lua)
+**設定ファイル**: [`lua/peinan/plugins/nvim-web-devicons.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/nvim-web-devicons.lua)
 
 **主な機能**:
 - ファイルタイプ別のアイコン
@@ -104,7 +104,7 @@ UIコンポーネントを提供します。
 
 Telescopeの拡張機能を提供します。
 
-**設定ファイル**: [`lua/alex/plugins/quicker.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/quicker.lua)
+**設定ファイル**: [`lua/peinan/plugins/quicker.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/quicker.lua)
 
 **主な機能**:
 - Telescopeの操作の高速化

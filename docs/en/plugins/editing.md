@@ -6,7 +6,7 @@ This page describes plugins related to text editing and movement.
 
 Provides fast text movement.
 
-**Configuration file**: [`lua/alex/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/leap.lua)
+**Configuration file**: [`lua/peinan/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/leap.lua)
 
 **Dependencies**:
 - vim-repeat
@@ -23,7 +23,7 @@ Provides fast text movement.
 **Configuration**:
 ```lua
 require("leap")
-require("alex.keymaps.init").leap()
+require("peinan.keymaps.init").leap()
 ```
 
 **Usage**:

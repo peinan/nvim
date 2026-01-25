@@ -12,7 +12,7 @@ Supports multiple execution environments:
 - **WezTerm**: Terminal emulator
 - **VSCode**: Runs as VSCode extension
 
-**Configuration file**: [`lua/alex/environments/`](https://github.com/peinan/nvim/tree/main/lua/alex/environments)
+**Configuration file**: [`lua/peinan/environments/`](https://github.com/peinan/nvim/tree/main/lua/peinan/environments)
 
 ### LSP (Language Server Protocol)
 
@@ -26,7 +26,7 @@ Provides powerful language support:
 - **Signature Help**: Display function signatures
 - **Rename**: Rename symbols
 
-**Configuration file**: [`lua/alex/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp)
+**Configuration file**: [`lua/peinan/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp)
 
 **Keymaps**:
 - `RR` - Rename
@@ -49,7 +49,7 @@ Provides powerful completion:
 - **Buffer Completion**: Text completion from buffers
 - **Command Line Completion**: Command line completion
 
-**Configuration file**: [`lua/alex/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/completion.lua)
+**Configuration file**: [`lua/peinan/plugins/completion.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/completion.lua)
 
 **Keymaps**:
 - `<C-Space>` - Start completion
@@ -63,7 +63,7 @@ Provides powerful completion:
 
 Functions as a file explorer.
 
-**Configuration file**: [`lua/alex/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/oil-nvim.lua)
+**Configuration file**: [`lua/peinan/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/oil-nvim.lua)
 
 **Keymaps**:
 - `<leader>e` - Toggle Oil
@@ -84,7 +84,7 @@ Powerful fuzzy finder:
 - **LSP Features**: Search definitions, references, implementations, symbols
 - **TODO**: Search TODO comments
 
-**Configuration file**: [`lua/alex/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/telescope.lua)
+**Configuration file**: [`lua/peinan/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/telescope.lua)
 
 **Keymaps**:
 - `ff` - File search (current directory)
@@ -116,7 +116,7 @@ Fast text movement:
 - **Forward Jump**: Jump forward with `s`
 - **Backward Jump**: Jump backward with `S`
 
-**Configuration file**: [`lua/alex/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/leap.lua)
+**Configuration file**: [`lua/peinan/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/leap.lua)
 
 **Keymaps**:
 - `s` - Forward jump
@@ -127,7 +127,7 @@ Fast text movement:
 - **Save**: `<C-s>` - Save file
 - **Diffview**: `<leader>v` - Toggle Diffview
 
-**Configuration file**: [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps/init.lua)
+**Configuration file**: [`lua/peinan/keymaps/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/keymaps/init.lua)
 
 ### Git Features
 
@@ -139,13 +139,13 @@ Displays Git changes in the sign column:
 - **Modified**: Changed files
 - **Deleted**: Deleted files
 
-**Configuration file**: [`lua/alex/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/gitsigns.lua)
+**Configuration file**: [`lua/peinan/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/gitsigns.lua)
 
 #### Git Blame
 
 Displays Git blame information:
 
-**Configuration file**: [`lua/alex/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/git-blame.lua)
+**Configuration file**: [`lua/peinan/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/git-blame.lua)
 
 **Keymaps**:
 - `<leader>b` - Toggle Git Blame
@@ -154,7 +154,7 @@ Displays Git blame information:
 
 Displays Git diffs:
 
-**Configuration file**: [`lua/alex/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/diffview.lua)
+**Configuration file**: [`lua/peinan/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/diffview.lua)
 
 **Keymaps**:
 - `<leader>v` - Toggle Diffview
@@ -169,7 +169,7 @@ Startup dashboard:
 - **Recent Projects**: Recently opened projects
 - **Shortcuts**: Quick actions
 
-**Configuration file**: [`lua/alex/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/dashboard.lua)
+**Configuration file**: [`lua/peinan/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/dashboard.lua)
 
 #### Lualine
 
@@ -182,7 +182,7 @@ Status line:
 - **LSP Servers**: Connected LSP servers
 - **Various States**: Virtual diagnostics, format, Zen mode states
 
-**Configuration file**: [`lua/alex/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/lualine.lua)
+**Configuration file**: [`lua/peinan/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/lualine.lua)
 
 #### Noice
 
@@ -192,7 +192,7 @@ Improves command line UI:
 - **Notifications**: Notification display
 - **LSP Messages**: LSP message display
 
-**Configuration file**: [`lua/alex/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/noice.lua)
+**Configuration file**: [`lua/peinan/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/noice.lua)
 
 **Keymaps**:
 - `<C-d>` / `<C-u>` - Scroll LSP messages
@@ -202,7 +202,7 @@ Improves command line UI:
 
 Center focus mode:
 
-**Configuration file**: [`lua/alex/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/no-neck-pain.lua)
+**Configuration file**: [`lua/peinan/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/no-neck-pain.lua)
 
 **Keymaps**:
 - `<leader>n` - Toggle No Neck Pain
@@ -211,13 +211,13 @@ Center focus mode:
 
 Displays indent guides:
 
-**Configuration file**: [`lua/alex/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/indent-blankline.lua)
+**Configuration file**: [`lua/peinan/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/indent-blankline.lua)
 
 #### Neoscroll
 
 Smooth scrolling:
 
-**Configuration file**: [`lua/alex/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/neoscroll-nvim.lua)
+**Configuration file**: [`lua/peinan/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/neoscroll-nvim.lua)
 
 ### Language Support
 
@@ -225,19 +225,19 @@ Smooth scrolling:
 
 Syntax highlighting and text objects:
 
-**Configuration file**: [`lua/alex/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/treesitter.lua)
+**Configuration file**: [`lua/peinan/plugins/treesitter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/treesitter.lua)
 
 #### Linter
 
 Linter integration:
 
-**Configuration file**: [`lua/alex/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/linter.lua)
+**Configuration file**: [`lua/peinan/plugins/linter.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/linter.lua)
 
 #### TODO Comments
 
 Highlights and searches TODO comments:
 
-**Configuration file**: [`lua/alex/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/todo.lua)
+**Configuration file**: [`lua/peinan/plugins/todo.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/todo.lua)
 
 **Keymaps**:
 - `ft` - TODO search (current directory)
@@ -249,13 +249,13 @@ Highlights and searches TODO comments:
 
 Keymap help display:
 
-**Configuration file**: [`lua/alex/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/which-key.lua)
+**Configuration file**: [`lua/peinan/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/which-key.lua)
 
 #### Colorizer
 
 Highlights color codes:
 
-**Configuration file**: [`lua/alex/plugins/colorizer.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/colorizer.lua)
+**Configuration file**: [`lua/peinan/plugins/colorizer.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/colorizer.lua)
 
 ## Window Management
 

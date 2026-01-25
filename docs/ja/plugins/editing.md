@@ -6,7 +6,7 @@
 
 高速なテキスト移動を提供します。
 
-**設定ファイル**: [`lua/alex/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/leap.lua)
+**設定ファイル**: [`lua/peinan/plugins/leap.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/leap.lua)
 
 **依存関係**:
 - vim-repeat
@@ -23,7 +23,7 @@
 **設定内容**:
 ```lua
 require("leap")
-require("alex.keymaps.init").leap()
+require("peinan.keymaps.init").leap()
 ```
 
 **使用方法**:

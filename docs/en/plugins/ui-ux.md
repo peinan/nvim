@@ -6,7 +6,7 @@ This page describes plugins related to user interface and user experience.
 
 Provides a startup dashboard.
 
-**Configuration file**: [`lua/alex/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/dashboard.lua)
+**Configuration file**: [`lua/peinan/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/dashboard.lua)
 
 **Main features**:
 - Display recently opened files
@@ -38,7 +38,7 @@ config.shortcut = {
 
 Provides center focus mode. Places the editor in the center and adds margins on the sides.
 
-**Configuration file**: [`lua/alex/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/no-neck-pain.lua)
+**Configuration file**: [`lua/peinan/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/no-neck-pain.lua)
 
 **Keymaps**:
 - `<leader>n` - Toggle No Neck Pain
@@ -47,7 +47,7 @@ Provides center focus mode. Places the editor in the center and adds margins on 
 
 Provides smooth scroll animations.
 
-**Configuration file**: [`lua/alex/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/neoscroll-nvim.lua)
+**Configuration file**: [`lua/peinan/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/neoscroll-nvim.lua)
 
 **Main features**:
 - Smooth scroll animations
@@ -57,7 +57,7 @@ Provides smooth scroll animations.
 
 Displays indent guides.
 
-**Configuration file**: [`lua/alex/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/indent-blankline.lua)
+**Configuration file**: [`lua/peinan/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/indent-blankline.lua)
 
 **Main features**:
 - Indent level visualization
@@ -67,7 +67,7 @@ Displays indent guides.
 
 Functions as a file explorer.
 
-**Configuration file**: [`lua/alex/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/oil-nvim.lua)
+**Configuration file**: [`lua/peinan/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/oil-nvim.lua)
 
 **Keymaps**:
 - `<leader>e` - Toggle Oil
@@ -83,7 +83,7 @@ Functions as a file explorer.
 
 Provides a powerful fuzzy finder.
 
-**Configuration file**: [`lua/alex/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/telescope.lua)
+**Configuration file**: [`lua/peinan/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/telescope.lua)
 
 **Dependencies**:
 - plenary.nvim
@@ -111,7 +111,7 @@ Provides a powerful fuzzy finder.
 
 Provides a status line.
 
-**Configuration file**: [`lua/alex/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/lualine.lua)
+**Configuration file**: [`lua/peinan/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/lualine.lua)
 
 **Dependencies**:
 - nvim-web-devicons
@@ -134,7 +134,7 @@ Provides a status line.
 
 Improves command line UI.
 
-**Configuration file**: [`lua/alex/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/noice.lua)
+**Configuration file**: [`lua/peinan/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/noice.lua)
 
 **Dependencies**:
 - nui.nvim
@@ -154,7 +154,7 @@ Improves command line UI.
 
 Displays Git changes in the sign column.
 
-**Configuration file**: [`lua/alex/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/gitsigns.lua)
+**Configuration file**: [`lua/peinan/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/gitsigns.lua)
 
 **Main features**:
 - Display added lines
@@ -178,7 +178,7 @@ local signs = {
 
 Displays Git diffs.
 
-**Configuration file**: [`lua/alex/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/diffview.lua)
+**Configuration file**: [`lua/peinan/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/diffview.lua)
 
 **Keymaps**:
 - `<leader>v` - Toggle Diffview
@@ -192,7 +192,7 @@ Displays Git diffs.
 
 Displays Git blame information.
 
-**Configuration file**: [`lua/alex/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/git-blame.lua)
+**Configuration file**: [`lua/peinan/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/git-blame.lua)
 
 **Keymaps**:
 - `<leader>b` - Toggle Git Blame

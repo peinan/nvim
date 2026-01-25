@@ -6,7 +6,7 @@
 
 この設定では [Lazy.nvim](https://github.com/folke/lazy.nvim) を使用してプラグインを管理しています。
 
-**設定ファイル**: [`lua/alex/loader/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/loader/init.lua)
+**設定ファイル**: [`lua/peinan/loader/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/loader/init.lua)
 
 ## プラグインカテゴリ
 
@@ -66,7 +66,7 @@
 
 ## プラグインの設定場所
 
-すべてのプラグインの設定は [`lua/alex/plugins/`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins) ディレクトリにあります。各プラグインには個別の設定ファイルがあります。
+すべてのプラグインの設定は [`lua/peinan/plugins/`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins) ディレクトリにあります。各プラグインには個別の設定ファイルがあります。
 
 詳細は各カテゴリページを参照してください。
 

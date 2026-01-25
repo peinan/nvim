@@ -24,31 +24,31 @@ nvim/
 
 ### `init.lua`
 
-Neovim entry point. Loads the `lua/alex` module.
+Neovim entry point. Loads the `lua/peinan` module.
 
 **File**: [`init.lua`](https://github.com/peinan/nvim/tree/main/init.lua)
 
 ```lua
-require("alex")
+require("peinan")
 ```
 
-### [`lua/alex/`](https://github.com/peinan/nvim/tree/main/lua/alex)
+### [`lua/peinan/`](https://github.com/peinan/nvim/tree/main/lua/peinan)
 
 Main configuration module. All settings are organized under this directory.
 
-#### `lua/alex/init.lua`
+#### `lua/peinan/init.lua`
 
 Main initialization file. Loads modules in the following order:
 
-1. Environment check (`alex.environments`)
-2. Native option settings (`alex.native.options`)
-3. Plugin loader (`alex.loader`)
-4. Native features (`alex.native`)
-5. Keymaps (`alex.keymaps`)
+1. Environment check (`peinan.environments`)
+2. Native option settings (`peinan.native.options`)
+3. Plugin loader (`peinan.loader`)
+4. Native features (`peinan.native`)
+5. Keymaps (`peinan.keymaps`)
 
-**File**: [`lua/alex/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/init.lua)
+**File**: [`lua/peinan/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/init.lua)
 
-#### [`lua/alex/environments/`](https://github.com/peinan/nvim/tree/main/lua/alex/environments)
+#### [`lua/peinan/environments/`](https://github.com/peinan/nvim/tree/main/lua/peinan/environments)
 
 Manages environment-specific settings. Applies settings based on the execution environment such as Neovide, WezTerm, and VSCode.
 
@@ -63,7 +63,7 @@ Manages environment-specific settings. Applies settings based on the execution e
 - Environment-specific option settings
 - Control initialization based on environment
 
-#### [`lua/alex/keymaps/`](https://github.com/peinan/nvim/tree/main/lua/alex/keymaps)
+#### [`lua/peinan/keymaps/`](https://github.com/peinan/nvim/tree/main/lua/peinan/keymaps)
 
 Manages all keymap definitions. Centralized to prevent key binding conflicts.
 
@@ -76,7 +76,7 @@ Manages all keymap definitions. Centralized to prevent key binding conflicts.
 - Mode-specific (normal, insert, visual, terminal, command) keymaps
 - Plugin-specific keymaps
 
-#### [`lua/alex/loader/`](https://github.com/peinan/nvim/tree/main/lua/alex/loader)
+#### [`lua/peinan/loader/`](https://github.com/peinan/nvim/tree/main/lua/peinan/loader)
 
 Manages plugin loading. Uses Lazy.nvim for lazy loading plugins.
 
@@ -90,14 +90,14 @@ Manages plugin loading. Uses Lazy.nvim for lazy loading plugins.
 - Lazy loading configuration
 - Plugin dependency management
 
-#### [`lua/alex/native/`](https://github.com/peinan/nvim/tree/main/lua/alex/native)
+#### [`lua/peinan/native/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native)
 
 Manages Neovim native feature settings. Implements features that don't depend on plugins.
 
 **Main files**:
 - `init.lua` - Native features initialization
 - `options.lua` - Neovim option settings
-- [`lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp) - LSP settings
+- [`lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp) - LSP settings
   - `init.lua` - LSP initialization and diagnostics
   - `defaults.lua` - Default LSP settings
   - `tsn.lua` - TypeScript/Node.js specific settings
@@ -110,7 +110,7 @@ Manages Neovim native feature settings. Implements features that don't depend on
 - LSP setup and diagnostics
 - UI element customization
 
-#### [`lua/alex/plugins/`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins)
+#### [`lua/peinan/plugins/`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins)
 
 Manages individual plugin configuration files. Each plugin has its own configuration file.
 
@@ -126,7 +126,7 @@ Manages individual plugin configuration files. Each plugin has its own configura
 - Plugin-specific settings
 - Plugin integration settings
 
-#### [`lua/alex/utils/`](https://github.com/peinan/nvim/tree/main/lua/alex/utils)
+#### [`lua/peinan/utils/`](https://github.com/peinan/nvim/tree/main/lua/peinan/utils)
 
 Provides utility functions.
 

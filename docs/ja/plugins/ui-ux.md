@@ -6,7 +6,7 @@
 
 起動時のダッシュボードを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/dashboard.lua)
+**設定ファイル**: [`lua/peinan/plugins/dashboard.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/dashboard.lua)
 
 **主な機能**:
 - 最近開いたファイルの表示
@@ -38,7 +38,7 @@ config.shortcut = {
 
 中央集中モードを提供します。エディタを中央に配置し、サイドに余白を追加します。
 
-**設定ファイル**: [`lua/alex/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/no-neck-pain.lua)
+**設定ファイル**: [`lua/peinan/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/no-neck-pain.lua)
 
 **キーマップ**:
 - `<leader>n` - No Neck Painのトグル
@@ -47,7 +47,7 @@ config.shortcut = {
 
 スムーズなスクロールアニメーションを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/neoscroll-nvim.lua)
+**設定ファイル**: [`lua/peinan/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/neoscroll-nvim.lua)
 
 **主な機能**:
 - スムーズなスクロールアニメーション
@@ -57,7 +57,7 @@ config.shortcut = {
 
 インデントガイドを表示します。
 
-**設定ファイル**: [`lua/alex/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/indent-blankline.lua)
+**設定ファイル**: [`lua/peinan/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/indent-blankline.lua)
 
 **主な機能**:
 - インデントレベルの可視化
@@ -67,7 +67,7 @@ config.shortcut = {
 
 ファイルエクスプローラーとして機能します。
 
-**設定ファイル**: [`lua/alex/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/oil-nvim.lua)
+**設定ファイル**: [`lua/peinan/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/oil-nvim.lua)
 
 **キーマップ**:
 - `<leader>e` - Oilのトグル
@@ -83,7 +83,7 @@ config.shortcut = {
 
 強力なファジーファインダーを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/telescope.lua)
+**設定ファイル**: [`lua/peinan/plugins/telescope.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/telescope.lua)
 
 **依存関係**:
 - plenary.nvim
@@ -111,7 +111,7 @@ config.shortcut = {
 
 ステータスラインを提供します。
 
-**設定ファイル**: [`lua/alex/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/lualine.lua)
+**設定ファイル**: [`lua/peinan/plugins/lualine.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/lualine.lua)
 
 **依存関係**:
 - nvim-web-devicons
@@ -134,7 +134,7 @@ config.shortcut = {
 
 コマンドラインUIを改善します。
 
-**設定ファイル**: [`lua/alex/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/noice.lua)
+**設定ファイル**: [`lua/peinan/plugins/noice.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/noice.lua)
 
 **依存関係**:
 - nui.nvim
@@ -154,7 +154,7 @@ config.shortcut = {
 
 Gitの変更をサインバーに表示します。
 
-**設定ファイル**: [`lua/alex/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/gitsigns.lua)
+**設定ファイル**: [`lua/peinan/plugins/gitsigns.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/gitsigns.lua)
 
 **主な機能**:
 - 追加された行の表示
@@ -178,7 +178,7 @@ local signs = {
 
 Git差分を表示します。
 
-**設定ファイル**: [`lua/alex/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/diffview.lua)
+**設定ファイル**: [`lua/peinan/plugins/diffview.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/diffview.lua)
 
 **キーマップ**:
 - `<leader>v` - Diffviewのトグル
@@ -192,7 +192,7 @@ Git差分を表示します。
 
 Git blame情報を表示します。
 
-**設定ファイル**: [`lua/alex/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/git-blame.lua)
+**設定ファイル**: [`lua/peinan/plugins/git-blame.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/git-blame.lua)
 
 **キーマップ**:
 - `<leader>b` - Git Blameのトグル

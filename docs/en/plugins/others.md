@@ -6,7 +6,7 @@ This page describes plugins that provide other features.
 
 Displays keymap help.
 
-**Configuration file**: [`lua/alex/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/which-key.lua)
+**Configuration file**: [`lua/peinan/plugins/which-key.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/which-key.lua)
 
 **Main features**:
 - Keymap candidate display
@@ -21,7 +21,7 @@ Displays keymap help.
 
 Provides a color theme.
 
-**Configuration file**: [`lua/alex/plugins/nordic.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/nordic.lua)
+**Configuration file**: [`lua/peinan/plugins/nordic.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/nordic.lua)
 
 **Main features**:
 - Transparent background
@@ -52,7 +52,7 @@ require("tmux").setup()
 
 Provides icons.
 
-**Configuration file**: [`lua/alex/plugins/nvim-web-devicons.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/nvim-web-devicons.lua)
+**Configuration file**: [`lua/peinan/plugins/nvim-web-devicons.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/nvim-web-devicons.lua)
 
 **Main features**:
 - File type-specific icons
@@ -104,7 +104,7 @@ Provides a notification system.
 
 Enhances the quickfix and location list UI and workflow for faster navigation and actions.
 
-**Configuration file**: [`lua/alex/plugins/quicker.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins/quicker.lua)
+**Configuration file**: [`lua/peinan/plugins/quicker.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins/quicker.lua)
 
 **Main features**:
 - Faster Telescope operations

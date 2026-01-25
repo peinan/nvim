@@ -6,7 +6,7 @@ This page lists all plugins used in the Neovim configuration.
 
 This configuration uses [Lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins.
 
-**Configuration file**: [`lua/alex/loader/init.lua`](https://github.com/peinan/nvim/tree/main/lua/alex/loader/init.lua)
+**Configuration file**: [`lua/peinan/loader/init.lua`](https://github.com/peinan/nvim/tree/main/lua/peinan/loader/init.lua)
 
 ## Plugin Categories
 
@@ -66,7 +66,7 @@ The following plugins are used as dependencies for other plugins:
 
 ## Plugin Configuration Location
 
-All plugin configurations are located in the [`lua/alex/plugins/`](https://github.com/peinan/nvim/tree/main/lua/alex/plugins) directory. Each plugin has its own configuration file.
+All plugin configurations are located in the [`lua/peinan/plugins/`](https://github.com/peinan/nvim/tree/main/lua/peinan/plugins) directory. Each plugin has its own configuration file.
 
 For details, see each category page.
 

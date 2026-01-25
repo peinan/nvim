@@ -12,7 +12,7 @@
 - **WezTerm**: ターミナルエミュレータ
 - **VSCode**: VSCode拡張機能として実行
 
-**設定ファイル**: [`lua/alex/environments/`](https://github.com/peinan/nvim/tree/main/lua/alex/environments)
+**設定ファイル**: [`lua/peinan/environments/`](https://github.com/peinan/nvim/tree/main/lua/peinan/environments)
 
 ### LSP (Language Server Protocol)
 
@@ -26,7 +26,7 @@
 - **シグネチャヘルプ**: 関数シグネチャの表示
 - **リネーム**: シンボルのリネーム
 
-**設定ファイル**: [`lua/alex/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/alex/native/lsp)
+**設定ファイル**: [`lua/peinan/native/lsp/`](https://github.com/peinan/nvim/tree/main/lua/peinan/native/lsp)
 
 **キーマップ**:
 - `RR` - リネーム
@@ -49,7 +49,7 @@
 - **バッファ補完**: バッファ内のテキスト補完
 - **コマンドライン補完**: コマンドラインでの補完
 
-**設定ファイル**: [`lua/alex/plugins/completion.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/completion.lua)
+**設定ファイル**: [`lua/peinan/plugins/completion.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/completion.lua)
 
 **キーマップ**:
 - `<C-Space>` - 補完開始
@@ -63,7 +63,7 @@
 
 ファイルエクスプローラーとして機能します。
 
-**設定ファイル**: [`lua/alex/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/oil-nvim.lua)
+**設定ファイル**: [`lua/peinan/plugins/oil-nvim.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/oil-nvim.lua)
 
 **キーマップ**:
 - `<leader>e` - Oilのトグル
@@ -84,7 +84,7 @@
 - **LSP機能**: 定義、参照、実装、シンボルの検索
 - **TODO**: TODOコメントの検索
 
-**設定ファイル**: [`lua/alex/plugins/telescope.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/telescope.lua)
+**設定ファイル**: [`lua/peinan/plugins/telescope.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/telescope.lua)
 
 **キーマップ**:
 - `ff` - ファイル検索（カレントディレクトリ）
@@ -116,7 +116,7 @@
 - **前方ジャンプ**: `s`で前方にジャンプ
 - **後方ジャンプ**: `S`で後方にジャンプ
 
-**設定ファイル**: [`lua/alex/plugins/leap.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/leap.lua)
+**設定ファイル**: [`lua/peinan/plugins/leap.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/leap.lua)
 
 **キーマップ**:
 - `s` - 前方ジャンプ
@@ -127,7 +127,7 @@
 - **保存**: `<C-s>` - ファイル保存
 - **Diffview**: `<leader>v` - Diffviewのトグル
 
-**設定ファイル**: [`lua/alex/keymaps/init.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/keymaps/init.lua)
+**設定ファイル**: [`lua/peinan/keymaps/init.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/keymaps/init.lua)
 
 ### Git機能
 
@@ -139,13 +139,13 @@ Gitの変更をサインバーに表示：
 - **変更**: 変更されたファイル
 - **削除**: 削除されたファイル
 
-**設定ファイル**: [`lua/alex/plugins/gitsigns.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/gitsigns.lua)
+**設定ファイル**: [`lua/peinan/plugins/gitsigns.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/gitsigns.lua)
 
 #### Git Blame
 
 Git blame情報を表示：
 
-**設定ファイル**: [`lua/alex/plugins/git-blame.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/git-blame.lua)
+**設定ファイル**: [`lua/peinan/plugins/git-blame.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/git-blame.lua)
 
 **キーマップ**:
 - `<leader>b` - Git Blameのトグル
@@ -154,7 +154,7 @@ Git blame情報を表示：
 
 Git差分を表示：
 
-**設定ファイル**: [`lua/alex/plugins/diffview.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/diffview.lua)
+**設定ファイル**: [`lua/peinan/plugins/diffview.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/diffview.lua)
 
 **キーマップ**:
 - `<leader>v` - Diffviewのトグル
@@ -169,7 +169,7 @@ Git差分を表示：
 - **最近のプロジェクト**: 最近開いたプロジェクト
 - **ショートカット**: クイックアクション
 
-**設定ファイル**: [`lua/alex/plugins/dashboard.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/dashboard.lua)
+**設定ファイル**: [`lua/peinan/plugins/dashboard.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/dashboard.lua)
 
 #### Lualine
 
@@ -182,7 +182,7 @@ Git差分を表示：
 - **LSPサーバー**: 接続中のLSPサーバー
 - **各種状態**: 仮想診断、フォーマット、Zenモードの状態
 
-**設定ファイル**: [`lua/alex/plugins/lualine.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/lualine.lua)
+**設定ファイル**: [`lua/peinan/plugins/lualine.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/lualine.lua)
 
 #### Noice
 
@@ -192,7 +192,7 @@ Git差分を表示：
 - **通知**: 通知の表示
 - **LSPメッセージ**: LSPメッセージの表示
 
-**設定ファイル**: [`lua/alex/plugins/noice.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/noice.lua)
+**設定ファイル**: [`lua/peinan/plugins/noice.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/noice.lua)
 
 **キーマップ**:
 - `<C-d>` / `<C-u>` - LSPメッセージスクロール
@@ -202,7 +202,7 @@ Git差分を表示：
 
 中央集中モード：
 
-**設定ファイル**: [`lua/alex/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/no-neck-pain.lua)
+**設定ファイル**: [`lua/peinan/plugins/no-neck-pain.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/no-neck-pain.lua)
 
 **キーマップ**:
 - `<leader>n` - No Neck Painのトグル
@@ -211,13 +211,13 @@ Git差分を表示：
 
 インデントガイドの表示：
 
-**設定ファイル**: [`lua/alex/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/indent-blankline.lua)
+**設定ファイル**: [`lua/peinan/plugins/indent-blankline.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/indent-blankline.lua)
 
 #### Neoscroll
 
 スムーズなスクロール：
 
-**設定ファイル**: [`lua/alex/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/neoscroll-nvim.lua)
+**設定ファイル**: [`lua/peinan/plugins/neoscroll-nvim.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/neoscroll-nvim.lua)
 
 ### 言語サポート
 
@@ -225,19 +225,19 @@ Git差分を表示：
 
 シンタックスハイライトとテキストオブジェクト：
 
-**設定ファイル**: [`lua/alex/plugins/treesitter.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/treesitter.lua)
+**設定ファイル**: [`lua/peinan/plugins/treesitter.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/treesitter.lua)
 
 #### Linter
 
 リンターの統合：
 
-**設定ファイル**: [`lua/alex/plugins/linter.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/linter.lua)
+**設定ファイル**: [`lua/peinan/plugins/linter.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/linter.lua)
 
 #### TODO Comments
 
 TODOコメントのハイライトと検索：
 
-**設定ファイル**: [`lua/alex/plugins/todo.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/todo.lua)
+**設定ファイル**: [`lua/peinan/plugins/todo.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/todo.lua)
 
 **キーマップ**:
 - `ft` - TODO検索（カレントディレクトリ）
@@ -249,13 +249,13 @@ TODOコメントのハイライトと検索：
 
 キーマップのヘルプ表示：
 
-**設定ファイル**: [`lua/alex/plugins/which-key.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/which-key.lua)
+**設定ファイル**: [`lua/peinan/plugins/which-key.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/which-key.lua)
 
 #### Colorizer
 
 カラーコードのハイライト：
 
-**設定ファイル**: [`lua/alex/plugins/colorizer.lua`](https://github.com/peinan/nvim/blob/main/lua/alex/plugins/colorizer.lua)
+**設定ファイル**: [`lua/peinan/plugins/colorizer.lua`](https://github.com/peinan/nvim/blob/main/lua/peinan/plugins/colorizer.lua)
 
 ## ウィンドウ管理
 

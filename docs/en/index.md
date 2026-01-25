@@ -45,7 +45,7 @@ On first launch, Neovim will automatically install plugins. This may take a few 
 Main configuration files are located at:
 
 - [`init.lua`](https://github.com/peinan/nvim/tree/main/init.lua) - Entry point
-- [`lua/alex/`](https://github.com/peinan/nvim/tree/main/lua/alex) - Main configuration module
+- [`lua/peinan/`](https://github.com/peinan/nvim/tree/main/lua/peinan) - Main configuration module
 
 For details, see [Directory Structure](/structure/).
 
