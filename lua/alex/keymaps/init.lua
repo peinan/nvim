@@ -151,6 +151,12 @@ function M.oil()
     })
 end
 
+function M.mini_files()
+    keymap(n, "<leader>mf", function()
+        require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
+    end, default_settings)
+end
+
 function M.editing()
     keymap(i, "<Esc>", "<Esc>`^", default_settings)
     keymap(ex_t, "<C-s>", function()

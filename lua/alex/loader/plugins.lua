@@ -52,6 +52,14 @@ return {
         lazy = false,
     },
     {
+        "echasnovski/mini.files",
+        version = false,
+        config = function()
+            require("alex.plugins.mini-files")
+        end,
+        lazy = false,
+    },
+    {
         "nvim-telescope/telescope.nvim",
         cmd = { "Telescope" },
         dependencies = {
