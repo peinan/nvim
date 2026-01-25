@@ -58,11 +58,11 @@ On first launch, Neovim will automatically install plugins. This may take a few 
 - **Which-key**: Interactive keymap help
 - **Nordic**: Color theme
 
-For detailed documentation, please visit the [plugins page](https://peinan.github.io/nvim/plugins/).
+For detailed documentation, please visit the [plugins page](https://nvim.peinan.cc/plugins/).
 
 ## Documentation
 
-For detailed documentation, features, keymaps, and complete plugin information, please visit the [GitHub Pages site](https://peinan.github.io/nvim/).
+For detailed documentation, features, keymaps, and complete plugin information, please visit the [GitHub Pages site](https://nvim.peinan.cc/).
 
 ## Activities
 

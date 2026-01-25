@@ -5,7 +5,7 @@ export default withMermaid(defineConfig({
   title: 'Neovim Configuration',
   description: 'Comprehensive documentation for Neovim configuration',
 
-  base: process.env.BASE_PATH || '/nvim/',
+  base: '/',
 
   cleanUrls: true,
 
