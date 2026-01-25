@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd("User", {
             border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
         })
         vim.wo[args.data.win_id].winhighlight =
-            "NormalFloat:MiniFilesNormal,FloatBorder:MiniFilesBorder,FloatTitle:MiniFilesTitle"
+            "NormalFloat:MiniFilesNormal,FloatBorder:MiniFilesBorder,FloatTitle:MiniFilesTitle,CursorLine:MiniFilesCursorLine"
     end,
 })
 
@@ -36,11 +36,13 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     callback = function()
         local telescope_border = vim.api.nvim_get_hl(0, { name = "TelescopeBorder" })
         local telescope_title = vim.api.nvim_get_hl(0, { name = "TelescopePromptTitle" })
+        local telescope_selection = vim.api.nvim_get_hl(0, { name = "TelescopeSelection" })
 
         vim.api.nvim_set_hl(0, "MiniFilesNormal", { bg = "NONE" })
         vim.api.nvim_set_hl(0, "MiniFilesBorder", telescope_border)
         vim.api.nvim_set_hl(0, "MiniFilesTitle", telescope_title)
-        vim.api.nvim_set_hl(0, "MiniFilesTitleFocused", telescope_title)
+        vim.api.nvim_set_hl(0, "MiniFilesTitleFocused", { fg = "#EBCB8B", bold = true })
+        vim.api.nvim_set_hl(0, "MiniFilesCursorLine", { fg = "#EBCB8B", bg = "NONE" })
     end,
 })
 
