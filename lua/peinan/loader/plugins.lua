@@ -101,6 +101,13 @@ return {
             require("peinan.plugins.diffview")
         end,
     },
+    {
+        "TaDaa/vimade",
+        event = { "VeryLazy" },
+        opts = function ()
+            return require("peinan.plugins.vimade")
+        end
+    },
 
     -- Editing / Movement.
     {
