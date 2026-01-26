@@ -104,9 +104,9 @@ return {
     {
         "TaDaa/vimade",
         event = { "VeryLazy" },
-        opts = function ()
+        opts = function()
             return require("peinan.plugins.vimade")
-        end
+        end,
     },
 
     -- Editing / Movement.
