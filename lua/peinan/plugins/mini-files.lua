@@ -1,4 +1,6 @@
-require("mini.files").setup({
+local MiniFiles = require("mini.files")
+
+MiniFiles.setup({
     mappings = {
         close = "q",
         go_in = "l",
@@ -15,7 +17,7 @@ require("mini.files").setup({
     windows = {
         preview = true,
         width_focus = 30,
-        width_preview = 40,
+        width_preview = 80,
     },
 })
 
@@ -36,7 +38,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     callback = function()
         local telescope_border = vim.api.nvim_get_hl(0, { name = "TelescopeBorder" })
         local telescope_title = vim.api.nvim_get_hl(0, { name = "TelescopePromptTitle" })
-        local telescope_selection = vim.api.nvim_get_hl(0, { name = "TelescopeSelection" })
 
         vim.api.nvim_set_hl(0, "MiniFilesNormal", { bg = "NONE" })
         vim.api.nvim_set_hl(0, "MiniFilesBorder", telescope_border)
@@ -47,5 +48,32 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 
 vim.cmd("doautocmd ColorScheme")
+
+-- Custom mappings for split/vsplit/tabedit
+local map_split = function(buf_id, lhs, direction)
+    local rhs = function()
+        local entry = MiniFiles.get_fs_entry()
+        if entry == nil or entry.fs_type == "directory" then
+            return
+        end
+        local win_id = MiniFiles.get_explorer_state().target_window
+        MiniFiles.close()
+        if direction ~= "tabedit" then
+            vim.api.nvim_set_current_win(win_id)
+        end
+        vim.cmd(direction .. " " .. vim.fn.fnameescape(entry.path))
+    end
+    vim.keymap.set("n", lhs, rhs, { buffer = buf_id, desc = "Open in " .. direction })
+end
+
+vim.api.nvim_create_autocmd("User", {
+    pattern = "MiniFilesBufferCreate",
+    callback = function(args)
+        local buf_id = args.data.buf_id
+        map_split(buf_id, "gs", "split")
+        map_split(buf_id, "gv", "vsplit")
+        map_split(buf_id, "gt", "tabedit")
+    end,
+})
 
 require("peinan.keymaps").mini_files()
