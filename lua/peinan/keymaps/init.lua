@@ -138,21 +138,8 @@ function M.native()
     end, default_expr)
 end
 
-function M.oil()
-    keymap(n, "<leader>e", function()
-        require("peinan.keymaps.utils").toggle_oil()
-    end)
-    require("oil").setup({
-        keymaps = {
-            ["<CR>"] = "actions.select",
-            ["-"] = "actions.parent",
-        },
-        use_default_keymaps = false,
-    })
-end
-
 function M.mini_files()
-    keymap(n, "<leader>mf", function()
+    keymap(n, "<leader>e", function()
         require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
     end, default_settings)
 end

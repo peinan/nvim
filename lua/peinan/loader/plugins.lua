@@ -44,14 +44,6 @@ return {
         end,
     },
     {
-        "stevearc/oil.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("peinan.plugins.oil-nvim")
-        end,
-        lazy = false,
-    },
-    {
         "echasnovski/mini.files",
         version = false,
         config = function()

@@ -131,31 +131,6 @@ local default_x = {
 ----------------------------------------------------------------------------------------------------
 --- Custom.
 
-local oil = {
-    sections = {
-        lualine_a = {
-            {
-                "mode",
-                fmt = fmt_mode,
-                icon = { "" },
-                separator = { right = " ", left = "" },
-            },
-        },
-        lualine_b = {},
-        lualine_c = {
-            {
-                U.get_short_cwd,
-                padding = 0,
-                icon = { "   ", color = icon_hl },
-                color = { bg = "NONE", fg = text_hl.fg },
-            },
-        },
-        lualine_x = default_x,
-        lualine_y = {},
-        lualine_z = default_z,
-    },
-    filetypes = { "oil" },
-}
 
 local telescope = {
     sections = {
@@ -263,7 +238,6 @@ require("lualine").setup({
     },
     extensions = {
         telescope,
-        oil,
     },
 })
 

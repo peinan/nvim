@@ -22,12 +22,6 @@ local custom_bars = {
             return "Netrw"
         end,
     },
-    oil = {
-        icon = " ",
-        name = function()
-            return string.gsub(vim.fn.expand("%"), "oil://", "")
-        end,
-    },
     checkhealth = {
         icon = "󰋠",
         name = function()
