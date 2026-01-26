@@ -173,8 +173,16 @@ TS.setup({
 
 vim.api.nvim_create_autocmd("User", {
     pattern = "TelescopePreviewerLoaded",
-    callback = function()
+    callback = function(args)
         vim.opt_local.number = true
+        -- Attach gitsigns to preview buffer if it's a file
+        if args.data and args.data.bufnr then
+            local bufnr = args.data.bufnr
+            local bufname = vim.api.nvim_buf_get_name(bufnr)
+            if bufname ~= "" and vim.fn.filereadable(bufname) == 1 then
+                require("gitsigns").attach(bufnr)
+            end
+        end
     end,
 })
 
