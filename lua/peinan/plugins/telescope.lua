@@ -122,9 +122,23 @@ preview_horizontal = U.merge(baseline, preview_horizontal)
 
 TS.setup({
     defaults = large_no_preview,
+    extensions = {
+        frecency = {
+            show_scores = false,
+            show_unindexed = true,
+            ignore_patterns = { "*.git/*", "*/tmp/*" },
+            workspaces = {
+                ["conf"] = vim.fn.expand("~/.config"),
+                ["project"] = vim.fn.expand("~/projects"),
+            },
+        },
+    },
     pickers = {
         oldfiles = small_no_preview,
-        find_files = U.merge(preview_horizontal, { hidden = true }),
+        find_files = U.merge(preview_horizontal, {
+            hidden = true,
+            file_ignore_patterns = { "^.git/" },
+        }),
         registers = small_no_preview,
 
         spell_suggest = single_select_small,
@@ -180,3 +194,4 @@ vim.api.nvim_create_autocmd("User", {
 
 -- Extensions.
 TS.load_extension("notify")
+TS.load_extension("frecency")
