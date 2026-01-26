@@ -150,7 +150,15 @@ return {
     },
     {
         "nvim-treesitter/nvim-treesitter",
-        dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+            {
+                "andymass/vim-matchup",
+                config = function()
+                    require("peinan.plugins.matchup")
+                end,
+            },
+        },
         event = { "VeryLazy" },
         build = { ":TSUpdate" },
         config = function()

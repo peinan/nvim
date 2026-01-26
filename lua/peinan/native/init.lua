@@ -1,5 +1,4 @@
 require("peinan.native.options")
-require("peinan.native.matchparen")
 require("peinan.native.terminal")
 require("peinan.native.statuscolumn")
 require("peinan.native.winbar")

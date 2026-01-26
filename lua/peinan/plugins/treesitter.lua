@@ -14,6 +14,10 @@ require("nvim-treesitter.configs").setup({
 
     indent = { enable = true },
 
+    matchup = {
+        enable = true,
+    },
+
     textobjects = {
         select = { enable = true },
         move = {
