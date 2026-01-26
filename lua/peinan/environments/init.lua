@@ -25,8 +25,9 @@ function M.init()
         return
     end
 
-    -- TODO: Check if we are in wezterm specifically.
-    require("peinan.environments.wezterm")
+    if os.getenv("TERM_PROGRAM") == "WezTerm" then
+        require("peinan.environments.wezterm")
+    end
 end
 
 M.init()
