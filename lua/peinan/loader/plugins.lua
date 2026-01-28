@@ -64,6 +64,9 @@ return {
                     require("peinan.plugins.quicker")
                 end,
             },
+            {
+                "nvim-telescope/telescope-frecency.nvim",
+            },
         },
         config = function()
             require("peinan.plugins.telescope")
