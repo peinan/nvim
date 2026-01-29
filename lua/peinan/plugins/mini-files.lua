@@ -3,8 +3,8 @@ local MiniFiles = require("mini.files")
 MiniFiles.setup({
     mappings = {
         close = "q",
-        go_in = "",
-        go_in_plus = { "<CR>", "L" },
+        go_in = "L",
+        go_in_plus = "<CR>",
         go_out = "",
         go_out_plus = "H",
         reset = "<BS>",
