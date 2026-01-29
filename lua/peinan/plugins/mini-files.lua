@@ -4,7 +4,7 @@ MiniFiles.setup({
     mappings = {
         close = "q",
         go_in = "",
-        go_in_plus = "<CR>",
+        go_in_plus = { "<CR>", "L" },
         go_out = "",
         go_out_plus = "H",
         reset = "<BS>",
