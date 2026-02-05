@@ -9,6 +9,8 @@ local sources = CMP.config.sources({
     { name = "nvim_lsp" },
     -- { name = "luasnip" },
     { name = "path" },
+}, {
+    { name = "buffer" },
 })
 local snippet = {
     expand = function(args)
