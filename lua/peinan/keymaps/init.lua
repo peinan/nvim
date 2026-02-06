@@ -90,6 +90,7 @@ function M.native()
     keymap(n, "k", "gk", default_settings)
     keymap(n, "j", "gj", default_settings)
     keymap(v, "v", "$h", default_settings)
+    keymap(v, "<CR>", "y", default_settings)
 
     -- Misc
     keymap(n, "<Esc>", "<Cmd>noh<CR>", allow_remap)
