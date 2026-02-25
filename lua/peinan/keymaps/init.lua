@@ -87,8 +87,8 @@ function M.native()
     keymap(t, "<C-l>", "<C-\\><C-n><C-w>l", default_settings)
 
     -- Movement
-    keymap(n, "k", "gk", default_settings)
-    keymap(n, "j", "gj", default_settings)
+    keymap(n_v, "k", "gk", default_settings)
+    keymap(n_v, "j", "gj", default_settings)
     keymap(v, "v", "$h", default_settings)
     keymap(v, "<CR>", "y", default_settings)
 
