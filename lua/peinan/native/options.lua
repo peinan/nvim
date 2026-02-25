@@ -53,7 +53,7 @@ vim.opt.textwidth = 0
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.showtabline = 0
 
 vim.opt.inccommand = "nosplit"
