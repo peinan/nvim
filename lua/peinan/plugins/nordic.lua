@@ -5,6 +5,9 @@ require("nordic").load({
     telescope = {
         style = "classic",
     },
+    on_highlight = function(highlights, palette)
+        highlights.Visual = { bg = palette.gray2 }
+    end,
 })
 
 require("lualine").setup({
