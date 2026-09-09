@@ -128,6 +128,7 @@ return {
                 auto_cmd = true,
                 override_editorconfig = false,
                 filetype_exclude = {
+                    "markdown",
                     "netrw",
                     "tutor",
                 },
