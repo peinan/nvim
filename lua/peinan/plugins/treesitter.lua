@@ -7,14 +7,18 @@ local _ts_query = require("vim.treesitter.query")
 local _ts_opts = { force = true, all = false }
 local function _ts_first(match, id)
     local v = match[id]
-    if type(v) == "table" then return v[1] end
+    if type(v) == "table" then
+        return v[1]
+    end
     return v
 end
 
 _ts_query.add_directive("downcase!", function(match, _, bufnr, pred, metadata)
     local id = pred[2]
     local node = _ts_first(match, id)
-    if not node then return end
+    if not node then
+        return
+    end
     local text = vim.treesitter.get_node_text(node, bufnr, { metadata = metadata[id] }) or ""
     metadata[id] = metadata[id] or {}
     metadata[id].text = string.lower(text)
@@ -22,7 +26,9 @@ end, _ts_opts)
 
 _ts_query.add_directive("set-lang-from-mimetype!", function(match, _, bufnr, pred, metadata)
     local node = _ts_first(match, pred[2])
-    if not node then return end
+    if not node then
+        return
+    end
     local script_type_languages = {
         ["importmap"] = "json",
         ["module"] = "javascript",
@@ -41,7 +47,9 @@ end, _ts_opts)
 
 _ts_query.add_directive("set-lang-from-info-string!", function(match, _, bufnr, pred, metadata)
     local node = _ts_first(match, pred[2])
-    if not node then return end
+    if not node then
+        return
+    end
     local aliases = { ex = "elixir", pl = "perl", sh = "bash", uxn = "uxntal", ts = "typescript" }
     local alias = vim.treesitter.get_node_text(node, bufnr):lower()
     local ft = vim.filetype.match({ filename = "a." .. alias })
@@ -59,7 +67,9 @@ end, _ts_opts)
 
 _ts_query.add_predicate("is?", function(match, _, bufnr, pred)
     local node = _ts_first(match, pred[2])
-    if not node then return true end
+    if not node then
+        return true
+    end
     local locals = require("nvim-treesitter.locals")
     local _, _, kind = locals.find_definition(node, bufnr)
     return vim.tbl_contains(vim.list_slice(pred, 3), kind)
@@ -67,7 +77,9 @@ end, _ts_opts)
 
 _ts_query.add_predicate("kind-eq?", function(match, _, _, pred)
     local node = _ts_first(match, pred[2])
-    if not node then return true end
+    if not node then
+        return true
+    end
     return vim.tbl_contains(vim.list_slice(pred, 3), node:type())
 end, _ts_opts)
 
